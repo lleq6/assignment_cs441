@@ -127,17 +127,17 @@ int main()
         cout << "Please enter numbers only.";
         return EXIT_FAILURE;
     }
-    cout << "�էҹ�ӹǹ " << N << " �ҹ" << endl;
+    cout << "มีงานจำนวน " << N << " งาน" << endl;
     for (int i = 0; i < N; ++i)
     {
         Event Event = Events[i];
-        cout << " - �ҹ��� " << i + 1 << " (Start: " << Event.Start << " Finish: " << Event.Finish << ")" << endl;
+        cout << " - งานที่ " << i + 1 << " (Start: " << Event.Start << " Finish: " << Event.Finish << ")" << endl;
     }
     vector<Room> Rooms = GetRooms(Events, N);
-    cout << "����ͧ������ " << K << " ��ͧ �Ѵ�ҹ������ " << Rooms.size() << " ��ͧ" << endl;
+    cout << "มีห้องทั้งหมด " << K << " ห้อง จัดงานทั้งหมด " << Rooms.size() << " ห้อง" << endl;
     for (int i = 0; i < K; ++i)
     {
-        cout << " - ��ͧ��� " << i + 1;
+        cout << " - ห้องที่ " << i + 1;
         if (i < Rooms.size())
         {
             Room Room = Rooms[i];
